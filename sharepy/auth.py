@@ -33,7 +33,7 @@ def detect(username, password=None):
         auth_url = root.find("STSAuthURL").text
         return SharePointADFS(username=username, password=password, auth_url=auth_url)
     else:
-        print("'{}' namespace sites are not supported").format(auth_type)
+        print("'{}' namespace sites are not supported".format(auth_type))
         return None
 
 
